@@ -22,6 +22,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBOutlet var switchLabel: UILabel!
+    
+    @IBAction func switchChange(sender: UISwitch) {
+        switchLabel.text = "\(sender.on)"
+    }
+    
 }
 
